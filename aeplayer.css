@@ -1,0 +1,159 @@
+/*!
+ * AEPlayer animation library sample CSS.
+ *
+ * Copyright 2012, Matt Keveney
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * March 08 2012 12:01 am PST
+ */
+div.aep_panel {
+    border: 0;
+    position: relative;     /* This enables us to use 'absolute' positioning with all children */
+    height: 50px;
+    width: 300px;
+    background: url('aeplayer-panel.png');
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+div.aep_panel button {
+    border: 0;
+    padding: 0;
+    background: url('aeplayer-panel.png') no-repeat scroll;
+    position: absolute;
+}
+div.aep_panel button:focus {
+    outline-style: none;
+}
+
+/* This is a firefox-specific pseudo-element (in CSS 3 syntax)
+   representing the focus rectangle.  We use it to shut off the default
+   dotted border.
+ */
+div.aep_panel button::-moz-focus-inner {
+  border: 0;
+}
+
+div.aep_panel button.playpause {
+    left: 5px;
+    top: 5px;
+    width:  40px;
+    height: 40px;
+    background-position:   0px -55px;
+}
+div.aep_panel button.playpause:focus {
+    background-position: -45px -55px;
+}
+div.aep_panel button.playpause:hover {
+    background-position: -90px -55px;
+}
+div.aep_panel button.playpause:hover:focus {
+    background-position: -135px -55px;
+}
+div.aep_panel button.playpause:hover:active,
+div.aep_panel button.playpause:active {
+    background-position: -180px -55px;
+}
+div.aep_panel button.playpause:focus:active,
+div.aep_panel button.playpause:hover:focus:active {
+    background-position: -225px -55px;
+}
+
+div.aep_panel button.playpause.pause {
+    background-position: -0px -100px;
+}
+div.aep_panel button.playpause.pause:focus {
+    background-position: -45px -100px;
+}
+div.aep_panel button.playpause.pause:hover {
+    background-position: -90px -100px;
+}
+div.aep_panel button.playpause.pause:focus:hover {
+    background-position: -135px -100px;
+}
+div.aep_panel button.playpause.pause:active,
+div.aep_panel button.playpause.pause:hover:active {
+    background-position: -180px -100px;
+}
+div.aep_panel button.playpause.pause:focus:active,
+div.aep_panel button.playpause.pause:hover:focus:active {
+    background-position: -225px -100px;
+}
+
+div.aep_panel button.prev {
+    left: 49px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-position:    0px -145px;
+}
+div.aep_panel button.prev:focus {
+    background-position:  -25px -145px;
+}
+div.aep_panel button.prev:hover {
+    background-position:  -50px -145px;
+}
+div.aep_panel button.prev:focus:hover{
+    background-position:  -75px -145px;
+}
+div.aep_panel button.prev:active,
+div.aep_panel button.prev:hover:active {
+    background-position:  -100px -145px;
+}
+div.aep_panel button.prev:focus:active,
+div.aep_panel button.prev:hover:focus:active {
+    background-position:  -125px -145px;
+}
+
+div.aep_panel button.next {
+    left: 275px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-position: -150px -145px;
+}
+div.aep_panel button.next:focus {
+    background-position: -175px -145px;
+}
+div.aep_panel button.next:hover {
+    background-position: -200px -145px;
+}
+div.aep_panel button.next:focus:hover {
+    background-position: -225px -145px;
+}
+div.aep_panel button.next:active,
+div.aep_panel button.next:hover:active {
+    background-position: -250px -145px;
+}
+div.aep_panel button.next:focus:active,
+div.aep_panel button.next:hover:focus:active {
+    background-position: -275px -145px;
+}
+
+div.aep_panel div.slider {
+    position: absolute;
+    left: 73px;
+    top: 17px;
+    width:198px;
+    height:15px;
+    display: inline-block;
+}
+div.aep_panel div.knob {
+    width:26px;
+    height:15px;
+    border:0;
+    background-image: url('aeplayer-panel.png');
+    background-position: -270px -55px;
+}
+div.aep_panel span.slabel {
+    position: absolute;
+    top: 30px;
+    left: 73px;
+    width: 198px;
+    height: 12px;
+    text-align:center;
+    font-size:9px;
+}
+
